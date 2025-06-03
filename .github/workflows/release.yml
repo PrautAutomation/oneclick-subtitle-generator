@@ -229,38 +229,43 @@ jobs:
         python-version: ${{ matrix.python-version }}
         
     - name: Test Universal Installer
+      shell: python
       run: |
-        # Stáhne a otestuje univerzální installer
-        python -c "
         import urllib.request
         import subprocess
         import sys
+        import os
         
         # Stažení installeru
-        urllib.request.urlretrieve(
-            'https://github.com/${{ github.repository }}/releases/latest/download/install.py',
-            'install.py'
-        )
+        try:
+            urllib.request.urlretrieve(
+                'https://github.com/${{ github.repository }}/releases/latest/download/install.py',
+                'install.py'
+            )
+            print("✅ Installer downloaded successfully")
+        except Exception as e:
+            print(f"❌ Failed to download installer: {e}")
+            sys.exit(1)
         
         # Test basic import
-        with open('test_install.py', 'w') as f:
-            f.write('''
+        test_code = '''
 import sys
-print(f\"Python: {sys.version}\")
-print(\"Basic imports test:\")
-
-try:
-    import platform
-    print(f\"✅ Platform: {platform.system()} {platform.machine()}\")
-except ImportError as e:
-    print(f\"❌ Platform import failed: {e}\")
-    sys.exit(1)
-
-print(\"✅ Installation test passed\")
-            ''')
+import platform
+print(f"Python: {sys.version}")
+print(f"Platform: {platform.system()} {platform.machine()}")
+print("✅ Basic test passed")
+        '''
         
-        subprocess.run([sys.executable, 'test_install.py'], check=True)
-        "
+        with open('test_install.py', 'w') as f:
+            f.write(test_code)
+        
+        # Run test
+        result = subprocess.run([sys.executable, 'test_install.py'], capture_output=True, text=True)
+        print(result.stdout)
+        if result.stderr:
+            print(result.stderr)
+        
+        sys.exit(result.returncode)
         
     - name: Report test results
       if: always()
@@ -276,7 +281,7 @@ print(\"✅ Installation test passed\")
     steps:
     - name: Release completion notification
       run: |
-        echo "🎉 Release ${{ needs.create-release.outputs.VERSION }} completed!"
+        echo "🎉 Release completed!"
         echo "📦 Available at: https://github.com/${{ github.repository }}/releases/latest"
         echo "🚀 Users can now install with:"
         echo "   curl -L https://github.com/${{ github.repository }}/releases/latest/download/install.py -o install.py"
