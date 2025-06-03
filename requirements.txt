@@ -1,0 +1,30 @@
+# OneClick Subtitle Generator - Python Dependencies
+
+# Core audio processing
+librosa>=0.9.0
+soundfile>=0.12.0
+
+# PyTorch for ML models
+torch>=1.13.0
+torchaudio>=0.13.0
+
+# Translation
+deep-translator>=1.11.0
+
+# FFmpeg wrapper
+ffmpeg-python>=0.2.0
+
+# Platform-specific Whisper backends (installed conditionally)
+# mlx-whisper>=0.1.0; platform_machine=="arm64" and sys_platform=="darwin"
+# faster-whisper>=0.9.0; platform_machine!="arm64" or sys_platform!="darwin"
+
+# Optional: Alternative translation service
+# googletrans==4.0.0rc1
+
+# Optional: GUI dependencies (usually included with Python)
+# tkinter is built-in on most platforms
+
+# Development dependencies (optional)
+# pytest>=7.0.0
+# black>=22.0.0
+# flake8>=5.0.0
