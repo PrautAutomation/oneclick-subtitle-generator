@@ -2,9 +2,9 @@
 
 🎬 OneClick batch subtitle generator for 8 world languages using Whisper AI
 
-[![GitHub release](https://img.shields.io/github/v/release/YOUR_USERNAME/oneclick-subtitle-generator)](https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/YOUR_USERNAME/oneclick-subtitle-generator/total)](https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases)
-[![Platform Support](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)](https://github.com/YOUR_USERNAME/oneclick-subtitle-generator)
+[![GitHub release](https://img.shields.io/github/v/release/PrautAutomation/oneclick-subtitle-generator)](https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/PrautAutomation/oneclick-subtitle-generator/total)](https://github.com/PrautAutomation/oneclick-subtitle-generator/releases)
+[![Platform Support](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)](https://github.com/PrautAutomation/oneclick-subtitle-generator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Automaticky vytvoří titulky ze všech audio souborů ve složce do 8 světových jazyků pomocí Whisper AI**
@@ -14,7 +14,7 @@
 ### Rychlá instalace (všechny platformy)
 ```bash
 # Stáhněte a spusťte univerzální installer
-curl -L https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
+curl -L https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
 python install.py
 ```
 
@@ -23,22 +23,22 @@ python install.py
 #### 🪟 Windows
 ```powershell
 # PowerShell (doporučeno)
-irm https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_windows.ps1 | iex
+irm https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_windows.ps1 | iex
 
 # Nebo CMD
-curl -L https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_windows.bat -o install.bat && install.bat
+curl -L https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_windows.bat -o install.bat && install.bat
 ```
 
 #### 🍎 macOS
 ```bash
 # Automatická instalace s Homebrew
-/bin/bash -c "$(curl -fsSL https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_macos.sh)"
+/bin/bash -c "$(curl -fsSL https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_macos.sh)"
 ```
 
 #### 🐧 Linux
 ```bash
 # Ubuntu/Debian
-curl -fsSL https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_linux.sh | bash
+curl -fsSL https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_linux.sh | bash
 ```
 
 ## 🎯 Co to dělá
@@ -242,8 +242,8 @@ MIT License - viz [LICENSE](LICENSE) soubor.
 ## 📞 Podpora
 
 - 📚 **Dokumentace:** [docs/](docs/)
-- 🐛 **Bug reports:** [GitHub Issues](https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues)
-- 💬 **Diskuze:** [GitHub Discussions](https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/discussions)
+- 🐛 **Bug reports:** [GitHub Issues](https://github.com/PrautAutomation/oneclick-subtitle-generator/issues)
+- 💬 **Diskuze:** [GitHub Discussions](https://github.com/PrautAutomation/oneclick-subtitle-generator/discussions)
 - ⭐ **Líbí se vám?** Dejte hvězdičku!
 
 ---
