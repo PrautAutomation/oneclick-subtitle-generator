@@ -89,12 +89,12 @@ setup(
     description="OneClick batch subtitle generator for 8 world languages using Whisper AI",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/YOUR_USERNAME/oneclick-subtitle-generator",
+    url="https://github.com/PrautAutomation/oneclick-subtitle-generator",
     project_urls={
-        "Bug Tracker": "https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues",
-        "Documentation": "https://github.com/YOUR_USERNAME/oneclick-subtitle-generator#readme",
-        "Source Code": "https://github.com/YOUR_USERNAME/oneclick-subtitle-generator",
-        "Discussions": "https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/discussions"
+        "Bug Tracker": "https://github.com/PrautAutomation/oneclick-subtitle-generator/issues",
+        "Documentation": "https://github.com/PrautAutomation/oneclick-subtitle-generator#readme",
+        "Source Code": "https://github.com/PrautAutomation/oneclick-subtitle-generator",
+        "Discussions": "https://github.com/PrautAutomation/oneclick-subtitle-generator/discussions"
     },
     
     # Package configuration
@@ -189,8 +189,8 @@ if __name__ == "__main__":
        oneclick-subtitles /path        # CLI batch processing
        
     📚 Documentation:
-       https://github.com/YOUR_USERNAME/oneclick-subtitle-generator
+       https://github.com/PrautAutomation/oneclick-subtitle-generator
        
     🆘 Support:
-       https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues
+       https://github.com/PrautAutomation/oneclick-subtitle-generator/issues
     """)
