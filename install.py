@@ -15,7 +15,7 @@ import shutil
 from pathlib import Path
 
 # Konfigurace
-REPO_OWNER = "YOUR_USERNAME"  # Změňte na váš GitHub username
+REPO_OWNER = "PrautAutomation"  # Změňte na váš GitHub username
 REPO_NAME = "oneclick-subtitle-generator"
 WHISPER_STREAMING_REPO = "https://github.com/ufal/whisper_streaming.git"
 
@@ -401,8 +401,8 @@ python enhanced_translator.py /audio --model medium
 
 ## 📞 Podpora
 
-- 🐛 Problémy: https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues
-- 📚 Dokumentace: https://github.com/YOUR_USERNAME/oneclick-subtitle-generator
+- 🐛 Problémy: https://github.com/PrautAutomation/oneclick-subtitle-generator/issues
+- 📚 Dokumentace: https://github.com/PrautAutomation/oneclick-subtitle-generator
 - ⭐ Líbí se vám? Dejte hvězdičku na GitHubu!
 
 ---
