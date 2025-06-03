@@ -249,11 +249,11 @@ jobs:
         
         # Test basic import
         test_code = '''
-import sys
-import platform
-print(f"Python: {sys.version}")
-print(f"Platform: {platform.system()} {platform.machine()}")
-print("✅ Basic test passed")
+            import sys
+            import platform
+            print(f"Python: {sys.version}")
+            print(f"Platform: {platform.system()} {platform.machine()}")
+            print("✅ Basic test passed")
         '''
         
         with open('test_install.py', 'w') as f:
