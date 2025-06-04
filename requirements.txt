@@ -1,43 +1,31 @@
-# OneClick Subtitle Generator - Production Dependencies
-# Pinned versions for production use
+# OneClick Subtitle Generator - Python Dependencies
 
 # Core audio processing
-librosa==0.10.1
-soundfile==0.12.1
+librosa>=0.9.0
+soundfile>=0.12.0
 
 # PyTorch for ML models
-torch==2.2.1
-torchaudio==2.2.1
+torch>=1.13.0
+torchaudio>=0.13.0
+numpy>=1.23.0
 
 # Translation
-deep-translator==1.11.4
+deep-translator>=1.11.0
 
 # FFmpeg wrapper
-ffmpeg-python==0.2.0
+ffmpeg-python>=0.2.0
 
-# Platform-specific Whisper backends (handled by setup.py)
-# These are installed conditionally based on platform
+# Platform-specific Whisper backends (installed conditionally)
+ mlx-whisper>=0.1.0; platform_machine=="arm64" and sys_platform=="darwin"
+ faster-whisper>=0.9.0; platform_machine!="arm64" or sys_platform!="darwin"
 
-[dev]
-# Development dependencies
-pytest==8.1.1
-pytest-cov==4.1.0
-black==24.3.0
-flake8==7.0.0
-mypy==1.8.0
-pylint==3.0.3
+# Optional: Alternative translation service
+ googletrans==4.0.0rc1
 
-[test]
-# Test dependencies
-pytest==8.1.1
-pytest-cov==4.1.0
-pytest-mock==3.12.0
+# Optional: GUI dependencies (usually included with Python)
+ tkinter is built-in on most platforms
 
-[doc]
-# Documentation dependencies
-sphinx==7.2.6
-sphinx-rtd-theme==2.0.0
-
-[all]
-# All optional dependencies (install with: pip install -e .[all])
-googletrans==4.0.0-rc1
+# Development dependencies (optional)
+ pytest>=7.0.0
+ black>=22.0.0
+ flake8>=5.0.0
