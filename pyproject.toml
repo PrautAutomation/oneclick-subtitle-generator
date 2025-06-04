@@ -1,0 +1,96 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oneclick-subtitle-generator"
+version = "1.0.0"
+description = "OneClick batch subtitle generator for 8 world languages using Whisper AI"
+readme = "README.md"
+authors = [
+    { name = "Martin Švanda", email = "martin.k.svanda@gmail.com" },
+]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Multimedia :: Video",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "librosa>=0.9.0",
+    "soundfile>=0.12.0",
+    "torch>=1.13.0",
+    "torchaudio>=0.13.0",
+    "deep-translator>=1.11.0",
+    "ffmpeg-python>=0.2.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "flake8>=5.0.0",
+    "mypy>=1.0.0",
+    "pre-commit>=2.20.0"
+]
+gui = ["tkinter; platform_system!='Darwin'"]
+openai = ["openai>=1.0.0"]
+all = [
+    "mlx-whisper>=0.1.0; platform_machine=='arm64' and sys_platform=='darwin'",
+    "faster-whisper>=0.9.0",
+    "whisper-timestamped>=1.14.0",
+    "googletrans==4.0.0rc1",
+    "openai>=1.0.0"
+]
+
+[project.urls]
+homepage = "https://github.com/PrautAutomation/oneclick-subtitle-generator"
+documentation = "https://github.com/PrautAutomation/oneclick-subtitle-generator#readme"
+repository = "https://github.com/PrautAutomation/oneclick-subtitle-generator"
+changelog = "https://github.com/PrautAutomation/oneclick-subtitle-generator/releases"
+bug_tracker = "https://github.com/PrautAutomation/oneclick-subtitle-generator/issues"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-v --cov=src --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["**/__init__.py"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+    "pass",
+]

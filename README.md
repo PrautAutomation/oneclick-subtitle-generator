@@ -9,6 +9,45 @@
 
 **Automaticky vytvoří titulky ze všech audio souborů ve složce do 8 světových jazyků pomocí Whisper AI**
 
+## 📦 Project Structure
+
+```
+oneclick-subtitle-generator/
+├── .github/                   # GitHub workflows and issue templates
+│   └── workflows/
+│       └── release.yml        # CI/CD pipeline
+├── docs/                      # Documentation
+│   ├── installation.md
+│   ├── usage.md
+│   └── troubleshooting.md
+├── examples/                  # Example files
+│   └── expected_output/
+├── installers/                # Platform-specific installers
+│   ├── install_linux.sh
+│   ├── install_macos.sh
+│   ├── install_windows.bat
+│   └── install_windows.ps1
+├── src/                      # Source code
+│   ├── __init__.py
+│   ├── config.py
+│   ├── enhanced_translator.py
+│   ├── oneclick_subtitle_generator.py
+│   └── utils.py
+├── tests/                    # Test files
+│   ├── __init__.py
+│   └── test_basic.py
+├── .gitignore
+├── CODE_OF_CONDUCT.md
+├── CONTRIBUTING.md
+├── install.py
+├── LICENSE
+├── pyproject.toml            # Modern Python project config
+├── QUICK_START.md
+├── README.md
+├── requirements.txt          # Development dependencies
+└── setup.py
+```
+
 ## 🚀 Jednokliková instalace
 
 ### Rychlá instalace (všechny platformy)
@@ -224,14 +263,62 @@ Více v [docs/troubleshooting.md](docs/troubleshooting.md)
 Vítáme příspěvky! Prosím:
 
 1. 🍴 Forkněte repozitář
-2. 🌿 Vytvořte feature branch (`git checkout -b feature/nova-funkce`)
-3. 💍 Commitněte změny (`git commit -am 'Přidání nové funkce'`)
-4. 📤 Pushněte branch (`git push origin feature/nova-funkce`)
-5. 🔄 Vytvořte Pull Request
 
-## 📄 Licence
+3. **Create a virtual environment** (recommended):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-MIT License - viz [LICENSE](LICENSE) soubor.
+4. **Install development dependencies**:
+   ```bash
+   pip install -e ".[dev]"  # Install package in development mode with dev dependencies
+   ```
+
+5. **Run tests**:
+   ```bash
+   pytest
+   ```
+
+6. **Run linters**:
+   ```bash
+   black .          # Code formatter
+   flake8           # Linter
+   mypy .           # Type checking
+   ```
+
+7. **Build the package**:
+   ```bash
+   python -m build
+   ```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) for details.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📚 Documentation
+
+For more detailed documentation, please see:
+- [Installation Guide](docs/installation.md)
+- [Usage Guide](docs/usage.md)
+- [Troubleshooting](docs/troubleshooting.md)
+
+## 🙏 Acknowledgments
+
+- [OpenAI Whisper](https://github.com/openai/whisper) - For the amazing speech recognition model
+- [FFmpeg](https://ffmpeg.org/) - For audio processing
+- [PyTorch](https://pytorch.org/) - For deep learning framework
+- And all the amazing open source contributors!
 
 ## 🙏 Poděkování
 
@@ -250,7 +337,7 @@ MIT License - viz [LICENSE](LICENSE) soubor.
 
 <div align="center">
 
-**Vytvořeno s ❤️ pro produkční použití v AI startup prostředí**
+**Vytvořeno s ❤️ pro 🇨🇿 a je určeno pro produkční použití komukoliv kdo tvoří obsah a motivuje svět kolem sebe. Praut s.r.o. je AI startup, který vytváří produkty jako tento.**
 
 [⬆ Zpět nahoru](#-oneclick-subtitle-generator)
 
