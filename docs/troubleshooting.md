@@ -170,7 +170,7 @@ chmod +x run_oneclick.sh
    - Include error message
    - Your OS and Python version
    - Steps to reproduce
-   - https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues
+   - https://github.com/PrautAutomation/oneclick-subtitle-generator/issues
 
 ### 💡 Pro Tips
 

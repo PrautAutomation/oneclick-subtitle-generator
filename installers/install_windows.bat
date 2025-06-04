@@ -28,7 +28,7 @@ cd /d "%INSTALL_DIR%"
 
 REM Download universal installer
 echo Downloading universal installer...
-curl -L https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
+curl -L https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
 if %errorlevel% neq 0 (
     echo ERROR: Failed to download installer
     echo Please check your internet connection

@@ -10,7 +10,7 @@ from pathlib import Path
 # Version information
 VERSION = "1.0.0"
 APP_NAME = "OneClick Subtitle Generator"
-REPO_URL = "https://github.com/YOUR_USERNAME/oneclick-subtitle-generator"
+REPO_URL = "https://github.com/PrautAutomation/oneclick-subtitle-generator"
 
 # Supported languages for subtitle generation
 LANGUAGES = {

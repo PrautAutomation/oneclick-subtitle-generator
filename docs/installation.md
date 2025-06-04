@@ -4,7 +4,7 @@
 
 ### Universal Installer (All Platforms)
 ```bash
-curl -L https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
+curl -L https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
 python install.py
 ```
 
@@ -13,20 +13,20 @@ python install.py
 #### 🪟 Windows
 ```powershell
 # PowerShell (recommended)
-irm https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_windows.ps1 | iex
+irm https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_windows.ps1 | iex
 
 # Or using CMD
-curl -L https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_windows.bat -o install.bat && install.bat
+curl -L https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_windows.bat -o install.bat && install.bat
 ```
 
 #### 🍎 macOS
 ```bash
-curl -fsSL https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_macos.sh | bash
+curl -fsSL https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_macos.sh | bash
 ```
 
 #### 🐧 Linux
 ```bash
-curl -fsSL https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install_linux.sh | bash
+curl -fsSL https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install_linux.sh | bash
 ```
 
 ## 📋 Prerequisites
@@ -60,7 +60,7 @@ If automatic installation fails, follow these steps:
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/oneclick-subtitle-generator.git
+git clone https://github.com/PrautAutomation/oneclick-subtitle-generator.git
 cd oneclick-subtitle-generator
 ```
 
@@ -95,7 +95,7 @@ python oneclick_subtitle_generator.py
 ## 🐳 Docker Installation (Coming Soon)
 
 ```bash
-docker pull YOUR_USERNAME/oneclick-subtitles
+docker pull PrautAutomation/oneclick-subtitles
 docker run -it -v /path/to/audio:/audio oneclick-subtitles
 ```
 
@@ -146,7 +146,7 @@ rm -rf ~/OneClick-Subtitles
 ## 🆘 Installation Failed?
 
 See [Troubleshooting Guide](troubleshooting.md) or:
-1. Check [GitHub Issues](https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues)
+1. Check [GitHub Issues](https://github.com/PrautAutomation/oneclick-subtitle-generator/issues)
 2. Create new issue with:
    - Your OS and version
    - Python version: `python --version`

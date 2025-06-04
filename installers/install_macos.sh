@@ -115,7 +115,7 @@ cd "$INSTALL_DIR"
 
 # Download universal installer
 print_info "Downloading universal installer..."
-curl -L https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
+curl -L https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install.py -o install.py
 
 if [[ ! -f "install.py" ]]; then
     print_error "Failed to download installer"
@@ -182,5 +182,5 @@ echo "   1. Double-click 'OneClick Subtitles' on your desktop"
 echo "   2. Or run: oneclick-subtitles (new terminal session)"
 echo "   3. Or navigate to: $INSTALL_DIR/whisper_streaming"
 echo ""
-echo -e "${CYAN}📚 Documentation: https://github.com/YOUR_USERNAME/oneclick-subtitle-generator${NC}"
-echo -e "${CYAN}🆘 Support: https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues${NC}"
+echo -e "${CYAN}📚 Documentation: https://github.com/PrautAutomation/oneclick-subtitle-generator${NC}"
+echo -e "${CYAN}🆘 Support: https://github.com/PrautAutomation/oneclick-subtitle-generator/issues${NC}"

@@ -128,7 +128,7 @@ Set-Location $InstallPath
 # Download and run universal installer
 Write-Host "📥 Downloading universal installer..." -ForegroundColor Cyan
 try {
-    $installerUrl = "https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/releases/latest/download/install.py"
+    $installerUrl = "https://github.com/PrautAutomation/oneclick-subtitle-generator/releases/latest/download/install.py"
     Invoke-WebRequest -Uri $installerUrl -OutFile "install.py"
     Write-Host "✅ Universal installer downloaded" -ForegroundColor Green
 } catch {
@@ -171,7 +171,7 @@ Write-Host "   1. Double-click 'OneClick Subtitles' on your desktop" -Foreground
 Write-Host "   2. Or navigate to: $InstallPath\whisper_streaming" -ForegroundColor White
 Write-Host "   3. Run: python oneclick_subtitle_generator.py" -ForegroundColor White
 Write-Host ""
-Write-Host "📚 Documentation: https://github.com/YOUR_USERNAME/oneclick-subtitle-generator" -ForegroundColor Cyan
-Write-Host "🆘 Support: https://github.com/YOUR_USERNAME/oneclick-subtitle-generator/issues" -ForegroundColor Cyan
+Write-Host "📚 Documentation: https://github.com/PrautAutomation/oneclick-subtitle-generator" -ForegroundColor Cyan
+Write-Host "🆘 Support: https://github.com/PrautAutomation/oneclick-subtitle-generator/issues" -ForegroundColor Cyan
 
 Read-Host "Press Enter to exit"
