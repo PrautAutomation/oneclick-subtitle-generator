@@ -23,7 +23,7 @@ ffmpeg-python>=0.2.0
  googletrans==4.0.0rc1
 
 # Optional: GUI dependencies (usually included with Python)
- tkinter is built-in on most platforms
+# tkinter is built-in on most platforms
 
 # Development dependencies (optional)
  pytest>=7.0.0
